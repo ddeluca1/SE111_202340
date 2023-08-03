@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta name="author" contecnt="Daniel DeLuca">
+    <meta name="description" content="w3 demo">
+    
+    <title>w3 | PLACES |</title>
+
+    <!--IN DOCUMENT STYLING: can style all elements in page-->
+    <style>
+
+        /*we are now writing in CSS*/
+
+        /*SELECTION in CSS or Javascript: 
+            selecting an elements within the page to do something with them(styling,action,applying buttons or functions)
+
+
+            SELECTION can occur through three main ways: 
+
+                *TAG NAME - all tags of this type take the style
+
+
+                ID* - only the elements with that id takes the style
+
+
+                *CLASS VALUE - 
+
+
+        */
+
+
+        /*ANATOMY OF CSS CODE BLOCKS: 
+
+            selector {
+                property: value;
+            }
+        */
+
+
+        div {/*select element by TAG NAME: applies to all divs in the page*/
+        
+            border:1px solid black;
+            padding:10px; /*space added between element conent and boarder*/
+            margin:5px; /*space added outside of elements border*/
+        }
+
+        #wrapper {/*select element by ID:*/
+            border:1px solid red;
+        }
+
+        .border {/*select elements by CLASS: only elements with this class value are affected [group]*/
+        
+        border:2px solid darkslategray;
+        
+        }
+        #footer, #header, #nav{
+            text-align:center;
+        }
+
+    </style>
+
+
+
+
+</head>
+ <!--IN DOCUMENT STYLING: can style all elements in page-->
+
+<body style="background-color:rgb(192, 191, 191)">
+
+    <div id="wrapper">
+
+
+
+
+
+    
+
+        <div id="header" class="border">
+
+            <h1 id="title" class="fancy"> The Last of Us</h1>
+
+
+
+
+        </div> <!--header-->    
+        <div id="nav" class="border">
+
+            <a href="index.html">|HOME|</a>
+            <a href="about.html">|ABOUT|</a>
+            <a href="people.html">|PEOPLE|</a>
+            <a href="places.html">|PLACES|</a>
+            
+            <br>
+
+            <!--external links:-->
+            <a href="https://www.hbo.com/the-last-of-us" target="_blank">| Official HBO Site |</a>
+
+            <br>
+
+            <!--in page jump links-->
+            <a href="#footer">|BOTTOM OF PAGE</a>
+
+
+        </div> <!--nav-->
+        <div id="content" class="border">
+
+            <h2>Content for <b>|PLACES|</b></h2>
+
+
+
+
+
+        </div> <!--content-->
+        <div id="footer">
+
+
+
+       
+            <p>&copy; D DELUCA | SE111.02 | <spam class="fancy">202340</spam></p>
+            <br>
+            <a href="index.html#header">| Top of the Home Page</a>
+        </div> <!--footer-->
+   
+    </div> <!--wrapper-->
+    
+</body>
+</html>
