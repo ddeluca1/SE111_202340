@@ -10,8 +10,30 @@
 
 
     <title>| The Wolf of Wall Street Cast |</title>
+    <style>
+        div {/*select element by TAG NAME: applies to all divs in the page*/
+            
+            border:20px solid black;
+            padding:10px; /*space added between element conent and boarder*/
+            margin:5px; /*space added outside of elements border*/
+        }
+    
+        #wrapper {/*select element by ID:*/
+            border:1px solid red;
+        }
+    
+        .border {/*select elements by CLASS: only elements with this class value are affected [group]*/
+        
+        border:2px solid darkslategray;
+        
+        }
+        #footer, #header, #nav, #content, #extracredit{
+            text-align:center;
+        }
+    </style>
 </head>
-<body>
+<body
+    style="background-color:rgb(251, 180, 14)">
 
     <div id="container">
 
@@ -42,7 +64,7 @@
             <!--section header[whick page were currently on]-->
             <h2><b>Cast</b> of <em>The Wolf Of Wall Street</em></h2>
 
-            <p>A breif introduction to/overview of the movie <em>The Wolf Of Wall Street</em></p>
+            <p><em>The Wolf Of Wall Street</em></p>
 
             <!--reusable div for EACH character (5 minimum)-->
             <div class="character">
