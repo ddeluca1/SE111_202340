@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--The type of font we are using-->
+    <meta charset="UTF-8">
+    <!--Tells the -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel DeLuca">
+    <meta name="description" content="Week 5 HW">
+    
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Week 5 | Tables and Forms</title>
+</head>
+<body>
+    <!--Build your Table and Form here-->
+    <h1> Birthday Registration Form</h1>
+
+    <!--let browser know we are creating a form-->
+
+<form>
+
+    <!--labels are used to match with the input elements-->
+    <!--'for' attribute connects labels with the input values (matching 'names and id' values in the <input>)-->
+
+    <label for="first name"> First Name: </label>
+
+    <input type="text" name="firstName" id="firstname">
+
+    <br>
+
+    <label for="last name"> Last Name: </label>
+
+    <input type="text" name="lastName" id="lastName">
+
+    <br>
+
+
+    <label for="age"> Age: </label>
+
+    <input type="text" name="age" id="age">
+
+
+
+
+</form>
+
+<!--this is the way-->
+<h2>Form Using a Table</h2>
+
+<form method="Get" action="confirm.html">
+
+    <!--table foes immediately in the form-->
+    <table>
+
+        <!--table head <th> for column header-->
+        <th>    
+            <tr><!--table row-->
+                <!--left column-->
+                <td>
+                    <h2>Labels</h2>
+
+
+                </td>
+
+                <!--right column-->
+                <td>
+                    <h2>Form Fields</h2>
+
+
+                </td>
+
+            </tr>
+        </th>
+
+
+        <!--table body<body- REQUIRED for tble conent-->
+            <tbody>
+                <tr><!--table row-->
+                    <!--left column[labels]-->
+                    <td>
+                        <label for="Parent/Gaurdian"> Parent/Gaurdian:</label>
+    
+    
+                    </td>
+    
+                    <!--right column-->
+                    <td>
+                        <input type="text" name="gfirst"
+                        id="gfirst" placeholder="First Name"> <br>
+
+                        <input type="text" name="glast"
+                        id="glast" placeholder="Last Name">
+    
+    
+                    </td>
+    
+                </tr>
+                <tr><!--table row-->
+                    <!--left column[labels]-->
+                    <td>
+                        <label for="cfirst"> Childs Name:</label>
+    
+    
+                    </td>
+    
+                    <!--right column-->
+                    <td>
+                        <input type="text" name="cfirst"
+                        id="cfirst" placeholder="Child's First Name"> <br>
+
+                        
+    
+    
+                    </td>
+    
+                </tr>
+
+                
+
+                <tr><!--table row-->
+                    <!--left column[labels]-->
+                    <td>
+                        <label for="age"> Childs Age:</label>
+    
+    
+                    </td>
+    
+                    <!--right column-->
+                    <td>
+                        <input type="text" name="age"
+                        id="age">
+    
+    
+                    </td>
+    
+                </tr>
+
+                <tr><!--table row-->
+                    <!--left column[labels]-->
+                    <td>
+                        <h3><label for="datetime"> Date and Time:</label></h3>
+    
+    
+                    </td>
+    
+                    <!--right column-->
+                    <td>
+                       
+    
+    
+                    </td>
+                    <tr>
+                        <!--left column-->
+                        <td>
+                            <label for="date"> Date:</label>
+    
+    
+                        </td>
+                        <!--right column-->
+                        <td>
+    
+                            <input type="date" name="date" id="date">
+    
+    
+                        </td>
+
+                        <tr>
+                            <!--left column-->
+                            <td>
+                                <label for="time"> Time:</label>
+        
+        
+                            </td>
+                            <!--right column-->
+                            <td>
+        
+                                <input type="time" name="time" id="time">
+        
+        
+                            </td>
+                            <tr><!--table row-->
+                                <!--left column[labels]-->
+                                <td>
+                                    <label for="guests"> Number of Guests:</label>
+                
+                
+                                </td>
+                
+                                <!--right column-->
+                                <td>
+                                    <input type="number" name="guests"
+                                    value="5" placeholder="guests">
+
+                                    <tr><!--table row-->
+                                        <!--left column[labels]-->
+                                        <td>
+                                            <h3><label for="food"> Food:</label></h3>
+
+                                            <td>
+                                                
+                                            </td>
+                        
+                        
+                                        </td>
+                </tr>
+                <tr><!--table row-->
+                    <!--left column[labels]-->
+                    <td>
+                        <label for="comments"> Comments:</label>
+    
+    
+                    </td>
+    
+                    <!--right column-->
+                    <td>
+                        <textarea type="comments"
+                        id="comments" id="comments" rows="10" cols="20" placeholder="Enter Your Comment Here" max length="100" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"></textarea>
+    
+    
+                    </td>
+    
+                </tr>
+
+                <tr><!--table row-->
+                    <!--left column[labels]-->
+                    <td>
+                        <label for="FavColor"> Pick Your Favorite Favorite Color:</label>
+    
+    
+                    </td>
+    
+                    <!--right column-->
+                    <td>
+                        <select name="FavColor" id="FavColor"><!--creates dropdown for choice-->
+
+                            <option value="green">Green</option>
+                            <option value="black">Black</option>
+                            <option value="pink">Pink</option>
+
+
+                        </select>
+    
+    
+                    </td>
+    
+                </tr>
+                <tr><!--table row-->
+                    <!--left column[labels]-->
+                    <td>
+                        <label for="study"> Program of Study:</label>
+    
+    
+                    </td>
+    
+                    <!--right column-->
+                    <td>
+                        <input type="radio" name="study" value="se">Software Engineering <br>
+
+                        <input type="radio" name="study" value="cyb">Cyber Security <br>
+
+                        <input type="radio" name="study" value="wd">Web Development <br>
+    
+    
+                    </td>
+    
+                </tr>
+                <tr>
+                    <!--left column-->
+                    <td>
+                        <label for="vehicle"> Select Your Vehicle</label>
+
+
+                    </td>
+                    <!--right column-->
+                    <td>
+
+                        <input type="checkbox" name="vehicle1" value="Rolls Royce"> Rolls Royce <br>
+
+                        <input type="checkbox" name="vehicle2" value="Bently"> Bently <br>
+
+                        <input type="checkbox" name="vehicle3" value="BMW"> BMW <br>
+
+                    </td>
+
+
+                </tr>
+              
+
+
+                </tr>
+                
+                <tr>
+
+                
+                
+                    <td>
+                        <!--right-->
+
+                        <input type="submit" value="SUBMIT !">
+                    </td>
+                </tr>
+
+
+                    
+                
+
+
+
+
+            </tbody>
+
+
+
+        <!--table foorter <foot> - for summations ett-->
+
+
+    </table>
+
+
+
+</form>
+    
+</body>
+</html>
