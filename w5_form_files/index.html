@@ -198,16 +198,103 @@
                                             <h3><label for="food"> Food:</label></h3>
 
                                             <td>
-                                                
+
                                             </td>
                         
                         
                                         </td>
+                                        <tr><!--table row-->
+                                            <!--left column[labels]-->
+                                            <td>
+                                                <label for="size"> Size:</label>
+                            
+                            
+                                            </td>
+                            
+                                            <!--right column-->
+                                            <td>
+                                                <input type="radio" name="size" value="sm">SM <br>
+                        
+                                                <input type="radio" name="size" value="md">MD <br>
+                        
+                                                <input type="radio" name="size" value="lg">LG <br>
+                            
+                            
+                                            </td>
+                            
+                                        </tr>
+                                        <tr>
+                                            <!--left column-->
+                                            <td>
+                                                <label for="drinks"> Drinks</label>
+                        
+                        
+                                            </td>
+                                            <!--right column-->
+                                            <td>
+                        
+                                                <input type="checkbox" name="drink1" checked="true" value="coke">Coke <br>
+                        
+                                                <input type="checkbox" name="drink2" value="sprite"> Sprite <br>
+                                                <input type="checkbox" name="drink3" value="fruit punch"> Fruit Punch <br>
+                                                <input type="checkbox" name="drink4" value="lemonade"> Lemonade <br>
+                                                <input type="checkbox" name="drink5" value="iced tead"> Iced Tea <br>
+                        
+                                            </td>
+                        
+                        
+                                        </tr>
+                                        <!--left column[labels]-->
+                    <td>
+                        <label for="cake"> Cake:</label>
+    
+    
+                    </td>
+    
+                    <!--right column-->
+                    <td>
+                        <select name="cake" id="cake"><!--creates dropdown for choice-->
+
+                            <option value="chocolate">Chocolate</option>
+                            <option value="vanilla">Vanilla</option>
+                            <option value="illbringmyown">I'll Bring My Own</option>
+
+
+                        </select>
+    
+    
+                    </td>
+                    <tr><!--table row-->
+                        <!--left column[labels]-->
+                        <td>
+                            <h4><label for="decorations"> Decorations:</label></h4>
+
+                            <td>
+
+                            </td>
+        
+        
+                        </td>
+
                 </tr>
+                <!--left column[labels]-->
+                <td>
+                    <label for="colors"> Color Scheme:</label>
+
+
+                </td>
+
+                <!--right column-->
+                <td>
+                    <input type=color name=colors id=colors input>
+
+
+                </td>
                 <tr><!--table row-->
                     <!--left column[labels]-->
+                
                     <td>
-                        <label for="comments"> Comments:</label>
+                        <label for="comments"> Additional Comments:</label>
     
     
                     </td>
@@ -215,76 +302,18 @@
                     <!--right column-->
                     <td>
                         <textarea type="comments"
-                        id="comments" id="comments" rows="10" cols="20" placeholder="Enter Your Comment Here" max length="100" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"></textarea>
+                        id="comments" rows="10" cols="20" placeholder="Please add additional comments" max length="100" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"></textarea>
     
     
                     </td>
     
                 </tr>
 
+                
                 <tr><!--table row-->
-                    <!--left column[labels]-->
-                    <td>
-                        <label for="FavColor"> Pick Your Favorite Favorite Color:</label>
-    
-    
-                    </td>
-    
-                    <!--right column-->
-                    <td>
-                        <select name="FavColor" id="FavColor"><!--creates dropdown for choice-->
-
-                            <option value="green">Green</option>
-                            <option value="black">Black</option>
-                            <option value="pink">Pink</option>
-
-
-                        </select>
-    
-    
-                    </td>
-    
-                </tr>
-                <tr><!--table row-->
-                    <!--left column[labels]-->
-                    <td>
-                        <label for="study"> Program of Study:</label>
-    
-    
-                    </td>
-    
-                    <!--right column-->
-                    <td>
-                        <input type="radio" name="study" value="se">Software Engineering <br>
-
-                        <input type="radio" name="study" value="cyb">Cyber Security <br>
-
-                        <input type="radio" name="study" value="wd">Web Development <br>
-    
-    
-                    </td>
-    
-                </tr>
+                    
                 <tr>
-                    <!--left column-->
-                    <td>
-                        <label for="vehicle"> Select Your Vehicle</label>
-
-
-                    </td>
-                    <!--right column-->
-                    <td>
-
-                        <input type="checkbox" name="vehicle1" value="Rolls Royce"> Rolls Royce <br>
-
-                        <input type="checkbox" name="vehicle2" value="Bently"> Bently <br>
-
-                        <input type="checkbox" name="vehicle3" value="BMW"> BMW <br>
-
-                    </td>
-
-
-                </tr>
+                   
               
 
 
@@ -297,7 +326,13 @@
                     <td>
                         <!--right-->
 
-                        <input type="submit" value="SUBMIT !">
+                        
+                    </td>
+
+                    <td>
+                        <!--right-->
+
+                        <input type="submit" value="Submit">
                     </td>
                 </tr>
 
