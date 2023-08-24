@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Danny">
+    <meta name="description" content="W6 Demo- Intro to JS">
+
+    <title>W6 |JS Intro|</title>
+
+    <!--in document CSS-->
+    <style>
+        /*we are writing CSS*/
+        body{
+            background-color:aquamarine
+        }
+    </style>
+</head>
+<body>
+    <!--we should have some sort of HTML in the file/body for base content-->
+    <h1>Week 6 Intro Demo | Javescipt</h1>
+
+    <!--IN DOCUMENT JAVSCRIPT livs in the html file itself, should always be after any HTML content on the page-->
+    <script>
+        //in here, we write js
+
+        //creating variable--keyword 'var'
+        var num1= 10
+
+        var num2= 7
+        //connot use num1 or num2 until they have been DEFINED
+
+        var sum=num1 + num2
+
+        //alert() allows for a popup in the browser page to display data to the user
+        //alert()--> pythons print() / OUTPUT
+
+        alert("hello world!")
+
+        //for development - only accessible in console via dev tools
+        console.log("hi universe!")
+
+        //`` denotes literal strings--> work similar to the .format()
+        //${VARNAME}inside of `` to display stored value mixed w/ string mssg
+        console.log(`The sum is: \n${sum}`)
+
+        //escape sequences also work inside of strings--> \n [new line]
+
+        //prompt() asks user to enter data- creates a pop-up, so works similarly to aler()jprompt() --> pythons input()
+        var fname = prompt(`Enter your name: `)
+
+        alert(`Hi there ${fname}`)
+
+        var age = prompt(`Enter your age: `)
+
+        var dogYears = age * 7
+
+        console.log(`In doggy years you are: ${dogYears}yo`)
+
+        //if you run into string/number ixing issues --> cast as a Number
+        //num= Number(num) //var num = Number(prompt("Enter a number:"))
+
+
+
+
+    </script>
+    
+</body>
+</html>
