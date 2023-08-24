@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Danny">
+    <meta name="description" content="W6 Demo2- Intro to JS">
+
+    <title>W6 | Demo 2 |</title>
+</head>
+<body>
+
+    <h1>Week 6- Secondary Javescript Demo</h1>
+    <h3><1>Condiions $ Functions</1></h3>
+
+    <!--Indocument js-->
+    <script>
+        //in here we write in js
+
+        //prompt user for yes or no response
+        var pref = prompt(`Welcome to Good Burder, home of the good burger, may I tke your order? \nType "yes" or "no"`)
+
+        //functions below check prompt/input value supplied by user and then returns a dining preference type
+
+        //function definition below
+        function checkDining(_pref) 
+        {
+            //conditions or conditional statements are held inside of () in js
+            //==is exactly equal in both value AND data type
+            if(_pref.toLowerCase()== `yes`)
+            {
+                //want toorder
+                var dining = prompt(`Would you like to dine in or take out?\nType "in" or "out" `)
+
+                if (dining.toLowerCase() === `in` || dining. toLowerCase())
+                {
+                    //dining in
+                    return dining.toLowerCase()
+
+                    //take out 
+                    return dining.toLowerCase()
+
+                }
+                else 
+                {
+                //invalid etry
+                return `bad`
+            }
+            else if (_pref.tolowerCase()) === `no`
+            {
+
+            }
+            else
+            {
+                alert(`UHOH Invalid Entry!\nPlease reload and re read directions :]`)
+                return 0
+
+            }
+        }
+
+        //call checkDining to find value / what user wants to do
+        var decision = checkDining(pref)
+
+        if (decision == 0)
+        {
+            alert(`okay, goodbye`)
+
+        }
+        else if (decision == `bad`)
+        {
+            
+        }
+
+
+    </script>
+    
+</body>
+</html>
