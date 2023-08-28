@@ -40,11 +40,18 @@
          var fname = prompt(`Enter your name: `)
  
          alert(`Hi there ${fname}`)
+
+         var hours = Number(prompt(`Emter the number of hours you worked in the past 2 weeks: `))
+         var hourlypay = Number(prompt(`Emter your rate of pay: `))
+         
+
+         var gpay = hours * hourlypay
+         console.log(`Gross pay: ${gpay}`)
  
-         var gpay = Number(prompt(`Enter your gross pay: `))
-         console.log(`Gross Pay: ${gpay}`)
+         //var gpay = Number(prompt(`Enter your gross pay: `))
+         //console.log(`Gross Pay: ${gpay}`)
  
-         var unclesam = (gpay * .2).toFixed(2)
+         var unclesam = (gpay * .2)
  
          console.log(`Uncle Sam: ${unclesam}`)
          var num1= gpay
@@ -59,7 +66,7 @@
  
          //show numbers rounded to specific decimal places--> .tofixed(#)
          console.log(`Your net pay is: ${sum.toFixed(2)}`)
-         alert(`Gross Pay: ${gpay}` `\nUncle Sam: ${unclesam}` `\nYour net pay is: ${sum.toFixed(2)}`)
+         alert(`Gross Pay: ${gpay.toFixed(2)}\n` + `Uncle Sam: ${unclesam.toFixed(2)}\n` + `Your net pay is: ${sum.toFixed(2)}`)
 
          </script>
  
