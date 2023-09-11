@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>W8 | JS DATA Structures</title>
+</head>
+<body>
+
+    <h1>W8 JAVAscript Demo | Array & Objects</h1>
+
+    <div id="output">
+        <!--we will write code in here-->
+    </div>
+    <script>
+        var name= `Dan`
+        console.log(name)
+
+        //ARRAYS--------------
+        //key --> [index], [i]
+
+        //create new populated array
+        var people= [
+            `Katie`,
+            `Toni`,
+            `Dave`
+        ]
+
+        console.log(`Array: ${people}`)
+        console.log(`First value of Array: ${people[0]}`)
+        
+
+        var firstPerson= people[0]
+        console.log(`First person in array: ${firstPerson}`)
+
+        people.push(`Dan`)
+        console.log(`Array: ${people}`)
+
+        console.log(`The length of the people array is: ${people.length}`)
+
+
+        people.push(prompt(`Enter a name for the array: `))
+        console.log(`Array: ${people}`)
+
+
+        var color= [
+            `grey`,
+            `purple`,
+            `black`,
+            `blue`,
+            `green`,
+        ]
+        var age= []
+
+        console.log(`${people[1]}'s favorite color is ${[3]}`)
+        
+
+        for(let index = 0; index <people, length; index++)
+        {
+            console.log(`${people[index]}'s favorite color is ${[index]}`)
+            age.push(
+                prompt(`How old is ${people[index]}?`)
+            )
+
+
+        }
+        
+        for(let index = 0; index <people, length; index++)
+        {
+            console.log(`${people[index]}'s age is ${[index]}`)
+            age.push(
+                prompt(`How old is ${people[index]}?`)
+            )
+
+
+        }
+        var output = document.querySelector(`#output`)
+
+        for(let index = 0; index <people, length; index++)
+        {
+            ouput.innerHTML +- `${people[index]}'s age is ${[index]}and favorite color is ${color[index]}!<br>`
+        
+
+
+        }
+        var person1={
+            first:`dave`,
+            last: `LeClaire`,
+            age: 19,
+            pets: false,
+            greeting: function() {
+                alert(`Hello from${this.first}!`)
+
+            },
+            clases:[`SE111`,`CYB123`, `NE121`]
+        }
+
+        for(let key in person1){
+            
+            console.log(`${key}: ${person1[key]}`)
+        }
+        var person2={
+            first:`Tony`,
+            last: `Koran`,
+            age: 21,
+            pets: false,
+            greeting: function() {
+                alert(`Hello from${this.first}!`)
+
+            },
+            clases:[`SE111`,`CYB123`, `NE121`]
+        }
+
+        for(let key in person1){
+            
+            console.log(`${key}: ${person1[key]}`)
+        }
+
+        var humans= [
+            person1,
+            person2,
+
+        ]
+
+        var newOutput= ``
+        for(let i= 0; i <humans.length; i++)
+        {
+            newOutput += `<h3>IFO FOR: ${humans[i].first}: </h3>`
+
+            for(let key in humans[i])
+            {
+                newOutput += `<p><b>${key}:</b> ${humans[i][key]} </p>`
+
+            }
+            newOutput += `<hr>`
+
+        }
+
+        document.querySelector(`#output`).innerHTML += newOutput
+
+
+
+
+
+
+    </script>
+
+    
+</body>
+</html>
