@@ -28,7 +28,7 @@
 				<td><input id="button" type="button" value="submit"></td>
 			</tr>
 		</table>
-	<div>
+	</body>
 	<div id="output">
 	
 	</div>
@@ -73,8 +73,8 @@
 				//2. last: will be a string that uses the last Input's value
 
             var person = {
-				first: firstNameinput.value,
-				last: lastNameinput.value
+				first: firstNameInput.value,
+				last: lastNameInput.value
 
 
 
@@ -121,14 +121,14 @@
 
                 }
                 //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
-				output=+`<hr`
+				output=+`<hr`;
 
 
 			}//end of loop going through people array to edit 'output'
 
 				//log the output string
 				//replace the outputDiv's inner HTML with the output string
-				outputDiv.innerHTML = output
+				output.innerHTML = output
 
 
 
