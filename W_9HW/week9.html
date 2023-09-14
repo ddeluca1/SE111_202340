@@ -30,6 +30,45 @@
 		{first:"Buzz", last:"Lightyear", credit:"Toy Story" },
 		{first:"Marion", last:"Cobretti", credit:"Cobra" }
 	]
+	//Query Select the <body> tag and store it in a variable.
+	var body = document.querySelector(`body`)
+	
+	//Loop through the array of objects
+
+	for(let i = 0; i < people.length; i++)
+		{
+			console.log(people[i].last)
+			//Declare a local variable called tempDiv;	
+			var tempDiv
+
+			tempDiv = document.createElement(`div`)
+				tempDiv.setAttribute(`id` , i)
+				tempDiv.setAttribute(`class` , `border`)
+			
+
+            //go into a spceific object and access all of its properties + values
+           	for(key in people[i])
+            {
+
+            //create a new pragraph tag for each property, and a new text node to hold th eproperty value (content for p tag)
+            		var p = document.createElement(`p`)
+
+            //and a new text node to hold the property value (content for p tag)
+            		var text = document.createTextNode(people[i][key])
+
+            //add the tect to the pp tag; add the p tage to the HTML page (document)
+            		p.appendChild(text)
+            		tempDiv.appendChild(p)
+            }//end of object
+
+
+            //add the entire div(containing all object propert info)to the page
+            		body.appendChild(tempDiv)
+            }
+
+		
+
+		
 	
 </script>
 
