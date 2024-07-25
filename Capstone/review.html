@@ -4,123 +4,190 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <meta name="author" content="DANNY DELUCA">
-    <meta name="desctription" content="W4 Demo">
+    <meta name="description" content="W4 Demo">
 
-
-    <title>| The Wolf of Wall Street Review</title>
+    <title>The Wolf of Wall Street Review</title>
     <style>
-        div {/*select element by TAG NAME: applies to all divs in the page*/
-            
-            border:20px solid black;
-            padding:10px; /*space added between element conent and boarder*/
-            margin:5px; /*space added outside of elements border*/
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
-    
-        #wrapper {/*select element by ID:*/
-            border:1px solid red;
+
+        #container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
-    
-        .border {/*select elements by CLASS: only elements with this class value are affected [group]*/
-        
-        border:2px solid darkslategray;
-        
+
+        header {
+            background-color: #003366;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
         }
-        #footer, #header, #nav, #content, #extracredit{
-            text-align:center;
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header h4 {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #003366;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #003366;
+            color: #fff;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #003366;
+        }
+
+        .content p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 0 0 20px;
+        }
+
+        .content img {
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .info {
+            text-align: left;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            max-width: 800px;
+        }
+
+        .info h3 {
+            font-size: 1.5em;
+            color: #003366;
+        }
+
+        .info ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .info li {
+            margin-bottom: 10px;
+        }
+
+        .extra-credit {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .extra-credit img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #003366;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
-<body
-    style="background-color:rgb(251, 180, 14)">
-
+<body>
     <div id="container">
 
-        <hr>
-
-        <div id="header">
-
-            <h1><em> The Wolf Of Wall Street</em></h1>
+        <header id="header">
+            <h1>The Wolf Of Wall Street</h1>
             <h4>Get The Ludes Donnie</h4>
+        </header>
 
+        <nav id="nav">
+            <a href="index.html">HOME</a>
+            <a href="Team.html">TEAM</a>
+            <a href="review.html">REVIEW</a>
+        </nav>
 
-        </div><!--/#header-->
-
-        <div id="nav">
-
-            <a href="index.html" class="link">HOME</a>
-            <a href="cast.html" class="link">CAST</a>
-            <a href="review.html" class="link">REVIEW</a>
-
-        
-            </div><!--NAV-->
-
-        <hr>
-
-
-        <div id="content">
-
-            <!--section header[whick page were currently on]-->
+        <div class="content" id="content">
             <h2><b>Review</b> of <em>The Wolf Of Wall Street</em></h2>
 
-            <p><b> Danny DeLuca</b> <i> August 10, 2023</i></p>
+            <p><b>Danny DeLuca</b> <i>August 10, 2023</i></p>
             <p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
 
-            <img src="images/Wall_Street__Broadway-267x300.jpg" alt="The Wolf Of Wall Street" style="width:200px" title="Damn">
+            <img src="images/Wall_Street__Broadway-267x300.jpg" alt="The Wolf Of Wall Street" style="width:200px" title="The Wolf Of Wall Street">
 
-            <p>This movie makes you think, how could any of this be true? Well, it's based on real people and real events. This  movie will be remembered for for a long time. I would describe this movie like a roller coaster because I felt invested in the cast and went on the ride through their ups and downs</p>
-            <p>Martin Scorsese was the perfect person to be directed. The whole cast was selected perfectly. Leonardo DiCaprio is one of my favorite actors and he brought out every emotion in this film. Excellent job! I would highly recommend this film to anyone with a sense of humor and can appreciate a good story.  </p>
+            <p>This movie makes you think, how could any of this be true? Well, it's based on real people and real events. This movie will be remembered for a long time. I would describe this movie like a roller coaster because I felt invested in the cast and went on the ride through their ups and downs.</p>
+            <p>Martin Scorsese was the perfect person to direct. The whole cast was selected perfectly. Leonardo DiCaprio is one of my favorite actors and he brought out every emotion in this film. Excellent job! I would highly recommend this film to anyone with a sense of humor and who can appreciate a good story.</p>
 
-            <a href="https://www.imdb.com/title/tt0993846/">> imbd.com for <em>The Wolf Of Wall Street</em></a>
+            <a href="https://www.imdb.com/title/tt0993846/">IMDb page for <em>The Wolf Of Wall Street</em></a>
 
             <div class="info">
-
-                <h3>Trivia & Fun Facts about <em> The Wolf Of Wall Street</em></h3>
-
+                <h3>Trivia & Fun Facts about <em>The Wolf Of Wall Street</em></h3>
                 <ul>
-
-                    <li>Fact #1 Jonah Hill put a real goldfish in his mouth</li>
-                    <li>Fact #2 The real Jordan Belfort was in the movie</li>
-                    <li>Fact #3 The actors snorted a lot of fake powder</li>
-                    
+                    <li>Fact #1 Jonah Hill put a real goldfish in his mouth.</li>
+                    <li>Fact #2 The real Jordan Belfort was in the movie.</li>
+                    <li>Fact #3 The actors snorted a lot of fake powder.</li>
                 </ul>
             </div>
 
-            <p>Based on a true story, Jordan Belfort rose to the top of Wall Street. He founded his own trading firm. Fueled by sex, drugs, and partying he knowingly defrauded his investors and became a main target of the FBI and SEC. <em>The Wolf Of Wall Street</em></p>
-
-
+            <p>Based on a true story, Jordan Belfort rose to the top of Wall Street. He founded his own trading firm. Fueled by sex, drugs, and partying, he knowingly defrauded his investors and became a main target of the FBI and SEC. <em>The Wolf Of Wall Street</em></p>
         </div><!--/#content-->
 
-        <div> <img src="images/Validation page review.JPG" alt="Validation"></div>
+        <div class="extra-credit">
+            <img src="images/Validation page review.JPG" alt="Validation">
+        </div>
 
-        <hr>
-
-
-        <div id="footer">
-
-            <!--link back to the top-->
+        <footer id="footer">
             <a href="#header">| Back to Top |</a>
-
             <p>&copy; D DeLuca | SE111.02 | 202340</p>
-
-            <br>
-            <br>
-            <br>
-
-            <!--image of califation screenshot for this-->
-            
-
-           
-
-        <hr>
-
-
-
-         </div><!--/#footer-->
-
+        </footer>
 
     </div><!--/ #container-->
-    
 </body>
 </html>

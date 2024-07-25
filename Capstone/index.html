@@ -4,118 +4,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <meta name="author" content="DANNY DELUCA">
-    <meta name="desctription" content="W4 Demo">
+    <meta name="author" content="Danny DeLuca">
+    <meta name="description" content="Capstone Project for JDB's Shipping Co.">
 
-
-    <title> Movie Site | The Wolf of Wall Street</title>
+    <title>JDB's Shipping Co.</title>
 
     <style>
-    div {/*select element by TAG NAME: applies to all divs in the page*/
-        
-        border:20px solid black;
-        padding:10px; /*space added between element conent and boarder*/
-        margin:5px; /*space added outside of elements border*/
-    }
+        body {
+            background-color: rgb(222, 222, 222);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-    #wrapper {/*select element by ID:*/
-        border:1px solid red;
-    }
+        #container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
 
-    .border {/*select elements by CLASS: only elements with this class value are affected [group]*/
-    
-    border:2px solid darkslategray;
-    
-    }
-    #footer, #header, #nav, #content, #extracredit{
-        text-align:center;
-    }
+        header, footer, nav, .content, .extra-credit {
+            margin: 20px 0;
+        }
+
+        header {
+            background-color: #3e3e3e;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header h4 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 2em;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #333;
+            border-radius: 5px;
+        }
+
+        .extra-credit {
+    text-align: center; /* Center-aligns the contents of this div */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.extra-credit iframe {
+    max-width: 100%; /* Makes the iframe responsive */
+    border: none; /* Removes default border */
+    margin: 0 auto; /* Centers the iframe horizontally */
+    display: block; /* Ensures it’s treated as a block-level element */
+}
 
 
-</style>
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #3e3e3e;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        footer a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body
-    style="background-color:rgb(30, 14, 251)">
-
+<body>
     <div id="container">
 
-        <hr>
+        <header id="header">
+            <h1>&#9818; JDB's Shipping Company &#9818;</h1>
+            <h4>We Ship Boxes Of All Sizes</h4>
+        </header>
 
-        <div id="header">
-
-            <h1><em> &#9818; The Wolf Of Wall Street &#9818; </em></h1>
-            <h4>Get The Ludes Donnie</h4>
-
-
-        </div><!--/#header-->
-
-        <div id="nav">
-
+        <nav id="nav">
             <a href="index.html" class="link">HOME</a>
-            <a href="cast.html" class="link">CAST</a>
+            <a href="Team.html" class="link">TEAM</a>
             <a href="review.html" class="link">REVIEW</a>
+        </nav>
 
-        
-            </div><!--NAV-->
-
-        <hr>
-
-
-        <div id="content">
-
-            <!--section header[whick page were currently on]-->
-            <h2><b>ABOUT</b> <em>The Wolf Of Wall Street</em></h2>
-
-            <p>Based on a true story, Jordan Belfort rose to the top of Wall Street. He founded his own trading firm. Fueled by sex, drugs, and partying he knowingly defrauded his investors and became a main target of the FBI and SEC.</p> 
-            <p><em>The Wolf Of Wall Street</em></p>
-
-            <img src="images/The_Wolf_of_Wall_Street_(2013).png" alt="The Wolf Of Wall Street official moview poster from 2013" style="width:600px" title="Damn">
-
-
-        </div><!--/#content-->
-        <hr>
-
-
-        <div id="extracredit">
-
-            <!--Extra credit bellow-->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/iszwuX1AK6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
-
+        <div class="content" id="content">
+            <h2><b>ABOUT</b> <em>JDB's Shipping Company</em></h2>
+            <p>Four buddies came together and formed a shipping company.</p> 
+            <p><em>JDB's Shipping Company</em></p>
+            <img src="images/BoxMan-removebg-preview.png" alt="Box Man" title="Box Man">
         </div>
 
-        <div> <img src="images/Movie_validationpage1.JPG" alt="Validation"></div>
+        <div class="extra-credit" id="extracredit">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QgwJcSrkyx8?si=PHwzDop2SbzTrejT" title="YouTube video player" allowfullscreen></iframe>
+        </div>
 
-        <hr>
+        <div>
+            <img src="images/Movie_validationpage1.JPG" alt="Validation" style="max-width: 100%;">
+        </div>
 
-
-        <div id="footer">
-
-            <!--link back to the top-->
+        <footer id="footer">
             <a href="#header">| Back to Top |</a>
-
-            <p>&copy; D DeLuca | SE111.02 | 202340</p>
-
-            <br>
-            <br>
-            <br>
-
-            <!--image of califation screenshot for this-->
-            
-
-            <!--
-            <img src="" alt="Validation of _ page">
-            -->
-        <hr>
-
-
-
-         </div><!--/#footer-->
-
+            <p>&copy; 2024 JDB's Shipping Co.</p>
+        </footer>
 
     </div><!--/ #container-->
-    
 </body>
 </html>
