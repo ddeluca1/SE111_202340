@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="JDP's Shipping Co.">
+    <meta name="description" content="Employee Homepage for JDP's Shipping Co.">
+
+    <title>JDP's Shipping Co. | Employee Homepage</title>
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff0081, #ff8c00, #f9ff00, #00ff00);
+            background-size: 600% 600%;
+            animation: gradientBG 15s ease infinite;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        /* Container */
+        #container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+
+        /* Header */
+        #header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid darkslategray;
+        }
+
+        #header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #000;
+        }
+
+        #header h4 {
+            margin: 10px 0 0;
+            font-style: italic;
+            color: #333;
+        }
+
+        /* Navigation */
+        #nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        #nav a {
+            text-decoration: none;
+            color: #000;
+            margin: 0 15px;
+            font-size: 1.2em;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        #nav a:hover {
+            border-bottom: 2px solid darkslategray;
+        }
+
+        /* Content */
+        #content {
+            margin: 20px 0;
+        }
+
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid darkslategray;
+            border-radius: 8px;
+            background: #fff;
+        }
+
+        .section h2 {
+            margin-top: 0;
+        }
+
+        /* Extra Credit */
+        #extracredit {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        #extracredit iframe {
+            width: 100%;
+            max-width: 560px;
+            height: auto;
+            border: none;
+        }
+
+        /* Footer */
+        #footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid darkslategray;
+            margin-top: 20px;
+        }
+
+        #footer a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        #footer p {
+            margin: 10px 0;
+        }
+
+        /* HR Styling */
+        hr {
+            border: 1px solid darkslategray;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Employee Site To JDP's Shipping Co.</h1>
+            <h4>We Love Our Team</h4>
+        </div><!--/#header-->
+
+        <div id="nav">
+            <a href="index.html">Home</a>
+            <a href="news.html">Company News</a>
+            <a href="resources.html">Employee Resources</a>
+            <a href="contact.html">Contact Us</a>
+        </div><!--/#nav-->
+
+        <hr>
+
+        <div id="content">
+            <div class="section">
+                <h2>Latest Company News</h2>
+                <p>Stay updated with the latest news and announcements from JDP's Shipping Co. Our team is constantly working on new strategies to enhance our shipping services and customer satisfaction.</p>
+                <ul>
+                    <li>New logistics partnership announced.</li>
+                    <li>Upcoming company-wide training session.</li>
+                    <li>Office relocation notice.</li>
+                </ul>
+            </div><!--/.section-->
+
+            <div class="section">
+                <h2>Employee Resources</h2>
+                <p>Access important documents, training materials, and resources to help you succeed in your role at JDP's Shipping Co. Your success is our priority.</p>
+                <ul>
+                    <li><a href="employee_handbook.pdf">Employee Handbook</a></li>
+                    <li><a href="training_materials.html">Training Materials</a></li>
+                    <li><a href="benefits_info.html">Benefits Information</a></li>
+                </ul>
+            </div><!--/.section-->
+
+            <div class="section">
+                <h2>Upcoming Events</h2>
+                <p>Join us for our upcoming events and activities. From team-building exercises to company celebrations, there’s always something happening at JDP's Shipping Co.</p>
+                <ul>
+                    <li>Monthly team meeting - August 15</li>
+                    <li>Annual company picnic - September 10</li>
+                    <li>Quarterly review - October 5</li>
+                </ul>
+            </div><!--/.section-->
+        </div><!--/#content-->
+
+        <hr>
+
+        <div id="extracredit">
+            <!-- Placeholder for any additional content or embedded media -->
+            <!-- Example: Company promotional video -->
+            <iframe src="https://www.youtube.com/embed/your-video-id" title="Company Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div><!--/#extracredit-->
+
+        <div id="footer">
+            <a href="#header">| Back to Top |</a>
+            <p>&copy; 2024 JDP's Shipping Co. | All Rights Reserved</p>
+        </div><!--/#footer-->
+    </div><!--/#container-->
+</body>
+</html>

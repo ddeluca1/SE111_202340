@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="DANNY DELUCA">
-    <meta name="description" content="W4 Demo">
+    <meta name="author" content="Danny">
+    <meta name="description" content="Shipping Calculator Form">
+    <title>Shipping Calculator Form</title>
 
-    <title>The Wolf of Wall Street Review</title>
     <style>
         body {
-            background-color: #f5f5f5;
+            background-color: rgb(222, 222, 222);
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -19,16 +19,21 @@
         #container {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        header, footer, .content, .form-container {
+            margin: 20px 0;
             padding: 20px;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         header {
-            background-color: #003366;
+            background-color: #3e3e3e;
             color: #fff;
-            padding: 20px 0;
             text-align: center;
-            border-radius: 5px;
-            margin-bottom: 20px;
         }
 
         header h1 {
@@ -37,96 +42,94 @@
         }
 
         header h4 {
-            margin: 5px 0;
+            margin: 0;
             font-size: 1.2em;
         }
 
         nav {
-            background-color: #fff;
-            padding: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-            margin-bottom: 20px;
             text-align: center;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px 0;
         }
 
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #003366;
+            color: #333;
             font-weight: bold;
-            padding: 10px 15px;
-            border-radius: 5px;
-            display: inline-block;
         }
 
         nav a:hover {
-            background-color: #003366;
-            color: #fff;
+            text-decoration: underline;
         }
 
-        .content {
+        form {
             text-align: center;
         }
 
-        .content h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #003366;
+        table {
+            margin: 0 auto;
+            border-collapse: separate;
+            border-spacing: 0 10px;
         }
 
-        .content p {
+        td {
+            padding: 5px;
+        }
+
+        label {
             font-size: 1.1em;
-            line-height: 1.6;
-            margin: 0 0 20px;
+            font-weight: bold;
         }
 
-        .content img {
+        input[type="text"] {
+            padding: 8px;
+            font-size: 1em;
+            border: 1px solid #ccc;
             border-radius: 5px;
+        }
+
+        input[type="button"] {
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: #3e3e3e;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            background-color: #555;
+        }
+
+        .form-container {
+            border: 1px solid rgb(87, 86, 86);
+            background-color: rgb(168, 168, 168);
+        }
+
+        .form-container h3 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+        }
+
+        .form-container p {
+            font-family: Courier New, monospace;
             margin: 10px 0;
         }
 
-        .info {
-            text-align: left;
-            margin: 20px auto;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            max-width: 800px;
-        }
-
-        .info h3 {
-            font-size: 1.5em;
-            color: #003366;
-        }
-
-        .info ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        .info li {
-            margin-bottom: 10px;
-        }
-
-        .extra-credit {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .extra-credit img {
-            max-width: 100%;
-            border-radius: 5px;
+        .form-container p#info {
+            font-style: italic;
         }
 
         footer {
-            background-color: #003366;
-            color: #fff;
-            padding: 20px;
             text-align: center;
+            padding: 20px;
+            background-color: #3e3e3e;
+            color: #fff;
             border-radius: 5px;
-            border: 1px solid #ddd;
-            margin-top: 20px;
         }
 
         footer a {
@@ -143,51 +146,106 @@
 <body>
     <div id="container">
 
-        <header id="header">
-            <h1>The Wolf Of Wall Street</h1>
-            <h4>Get The Ludes Donnie</h4>
+        <header>
+            <h1>&#9818; Shipping Calculator Form &#9818;</h1>
         </header>
 
-        <nav id="nav">
-            <a href="index.html">HOME</a>
-            <a href="Team.html">TEAM</a>
-            <a href="review.html">REVIEW</a>
+        <nav>
+            <a href="index.html" class="link">Home</a>
+            <a href="Team.html" class="link">Team</a>
+            <a href="review.html" class="link">Calculator</a>
+            
         </nav>
 
-        <div class="content" id="content">
-            <h2><b>Review</b> of <em>The Wolf Of Wall Street</em></h2>
-
-            <p><b>Danny DeLuca</b> <i>August 10, 2023</i></p>
-            <p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-
-            <img src="images/Wall_Street__Broadway-267x300.jpg" alt="The Wolf Of Wall Street" style="width:200px" title="The Wolf Of Wall Street">
-
-            <p>This movie makes you think, how could any of this be true? Well, it's based on real people and real events. This movie will be remembered for a long time. I would describe this movie like a roller coaster because I felt invested in the cast and went on the ride through their ups and downs.</p>
-            <p>Martin Scorsese was the perfect person to direct. The whole cast was selected perfectly. Leonardo DiCaprio is one of my favorite actors and he brought out every emotion in this film. Excellent job! I would highly recommend this film to anyone with a sense of humor and who can appreciate a good story.</p>
-
-            <a href="https://www.imdb.com/title/tt0993846/">IMDb page for <em>The Wolf Of Wall Street</em></a>
-
-            <div class="info">
-                <h3>Trivia & Fun Facts about <em>The Wolf Of Wall Street</em></h3>
-                <ul>
-                    <li>Fact #1 Jonah Hill put a real goldfish in his mouth.</li>
-                    <li>Fact #2 The real Jordan Belfort was in the movie.</li>
-                    <li>Fact #3 The actors snorted a lot of fake powder.</li>
-                </ul>
-            </div>
-
-            <p>Based on a true story, Jordan Belfort rose to the top of Wall Street. He founded his own trading firm. Fueled by sex, drugs, and partying, he knowingly defrauded his investors and became a main target of the FBI and SEC. <em>The Wolf Of Wall Street</em></p>
-        </div><!--/#content-->
-
-        <div class="extra-credit">
-            <img src="images/Validation page review.JPG" alt="Validation">
+        <div class="form-container">
+            <form>
+                <table>
+                    <tr>
+                        <td><label for="first">First Name: </label></td>
+                        <td><input type="text" id="first"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="last">Last Name: </label></td>
+                        <td><input type="text" id="last"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="weight">Weight of Item Being Shipped: </label></td>
+                        <td><input type="text" id="weight"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="rate">Price Per Pound: </label></td>
+                        <td><input type="text" id="rate"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" id="enter-button" value="Enter"></td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <div id="final" class="form-container">
+                    <h3>Pricing Info: </h3>
+                    <p id="info"><i>Information will be loaded once above form is filled.</i></p>
+                    <p id="check" style="width:220px; text-align:right;"></p>
+                </div>
+                <br>
+                <br>
+                <h3><i>If the above information is correct, please press "SUBMIT"</i></h3>
+                <input type="button" id="submit" value="SUBMIT">
+            </form>
         </div>
 
-        <footer id="footer">
+        <footer>
             <a href="#header">| Back to Top |</a>
-            <p>&copy; D DeLuca | SE111.02 | 202340</p>
+            <p>&copy; JDB's Shipping Co.</p>
         </footer>
 
     </div><!--/ #container-->
+
+    <script>
+        // Add event listener to the enter button
+        document.querySelector('#enter-button').addEventListener('click', calculateShipping);
+
+        function calculateShipping(e) {
+            // Get form values
+            var fname = document.querySelector('#first').value;
+            var lname = document.querySelector('#last').value;
+            var weight = Number(document.querySelector('#weight').value);
+            var rate = Number(document.querySelector('#rate').value);
+
+            // Console log values
+            console.log(fname);
+            console.log(lname);
+            console.log(weight);
+            console.log(rate);
+
+            // Create full name
+            var full = fname + ' ' + lname;
+            console.log(full);
+
+            // Calculate shipping cost
+            var cost = rate * weight;
+
+            // Console log processed values
+            console.log(cost.toFixed(2));
+
+            // Create final message
+            var finalMessage = `Full Name: ${full}<br>Weight: ${weight.toFixed(2)} lbs<br>Price Per Pound: $${rate.toFixed(2)}`;
+
+            // Update HTML elements
+            var info = document.querySelector('#info');
+            var check = document.querySelector('#check');
+
+            info.innerHTML = finalMessage;
+            check.innerHTML = `Shipping Cost: $${cost.toFixed(2)}`;
+
+            // Add event listener to the submit button
+            document.querySelector('#submit').addEventListener('click', submitNow);
+
+            function submitNow(e) {
+                alert(`${full}\nWeight: ${weight} lbs\nRate: $${rate.toFixed(2)}\n\nShipping Cost: $${cost.toFixed(2)}`);
+            }
+        }
+    </script>
+
 </body>
 </html>
