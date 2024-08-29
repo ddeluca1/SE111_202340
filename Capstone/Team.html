@@ -11,7 +11,7 @@
 
     <style>
         body {
-            background-color: #f4f4f4;
+            background-color: rgb(222, 222, 222);
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -23,13 +23,16 @@
             padding: 20px;
         }
 
+        header, footer, nav, .content, .extra-credit {
+            margin: 20px 0;
+        }
+
         header {
             background-color: #3e3e3e;
             color: #fff;
             padding: 20px;
             text-align: center;
             border-radius: 5px;
-            margin-bottom: 20px;
         }
 
         header h1 {
@@ -38,16 +41,15 @@
         }
 
         header h4 {
-            margin: 5px 0;
+            margin: 0;
             font-size: 1.2em;
         }
 
         nav {
-            background-color: #fff;
-            padding: 10px 0;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 10px;
             border-radius: 5px;
-            border: 1px solid #ddd;
-            margin-bottom: 20px;
         }
 
         nav a {
@@ -55,14 +57,12 @@
             text-decoration: none;
             color: #333;
             font-weight: bold;
-            padding: 10px;
-            display: inline-block;
         }
 
         nav a:hover {
-            background-color: #ddd;
-            border-radius: 5px;
+            text-decoration: underline;
         }
+        
 
         .content {
             text-align: center;
@@ -145,23 +145,32 @@
     <div id="container">
 
         <header id="header">
-            <h1>JDB's Shipping Co.</h1>
-            <h4>We Ship Boxes</h4>
+            <h1>&#9818; JDB's Shipping Company &#9818;</h1>
+            <h4>We Ship Boxes Of All Sizes</h4>
         </header>
 
         <nav id="nav">
             <a href="index.html" class="link">Home</a>
             <a href="Team.html" class="link">Team</a>
-            <a href="review.html" class="link">Calulator</a>
+            <a href="review.html" class="link">Calculator</a>
+            <a href="contactus.html" target="_blank" rel="noopener noreferrer">Contact Us</a>
+        </nav>
         </nav>
 
         <div class="content" id="content">
-            <h2><b>The Founder</b> of <em>JDB's Shipping Co.</em></h2>
-            <p><em>Meet our key team members below:</em></p>
+            <h1><em>Meet our key team members below:</em></h1>
 
             <div class="Founders">
                 <h3>Team</h3>
                 <img src="Images/teampic.jpeg" alt="Team" height="500"
+            </div>
+
+        <div class="content" id="content">
+            <h2><b>The Founders</b> of <em>JDB's Shipping Co.</em></h2>
+            <p><em>Dan</em></p>
+            <p><em>Dawson</em></p>
+            <p><em>Jayden</em></p>
+            <p><em>Bradley</em></p>
             </div>
 
             <!-- Character profiles -->
@@ -171,9 +180,6 @@
             </div>
         </div><!--/#content-->
 
-        <div class="extra-credit">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/QgwJcSrkyx8?si=PHwzDop2SbzTrejT" title="YouTube video player" allowfullscreen></iframe>
-        </div>
 
         <div class="content">
             
